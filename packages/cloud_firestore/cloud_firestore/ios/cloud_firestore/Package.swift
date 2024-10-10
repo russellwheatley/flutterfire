@@ -20,7 +20,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "11.0.0"),
-    .package( url: "https://github.com/firebase/flutterfire", branch: "spm-firestore")
+    .package( url: "https://github.com/russellwheatley/flutterfire", branch: "spm-firestore")
     // .package(name: "firebase_core", path: "../../../../firebase_core/firebase_core/ios/firebase_core")
   ],
   targets: [
