@@ -31,7 +31,7 @@ let package = Package(
       ],
       path: "packages/firebase_core/firebase_core/ios/firebase_core", // Specify the path to the source files
       resources: [
-        .process("firebase_core/Resources"),
+        .process("packages/firebase_core/firebase_core/ios/firebase_core/Sources/firebase_core/Resources"),
       ],
       cSettings: [
         .headerSearchPath("include/firebase_core"),
