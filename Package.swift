@@ -30,11 +30,13 @@ let package = Package(
         .product(name: "FirebaseInstallations", package: "firebase-ios-sdk"),
       ],
       path: "packages/firebase_core/firebase_core/ios/firebase_core", // Specify the path to the source files
+      exclude: ["Package.swift"],
       resources: [
         .process("Resources"),
       ],
+      publicHeadersPath: "Sources/firebase_core/include",
       cSettings: [
-        .headerSearchPath("include/firebase_core"),
+        .headerSearchPath("Sources/firebase_core/include"),
         .define("LIBRARY_VERSION", to: "\"\(library_version)\""),
         .define("LIBRARY_NAME", to: "\"flutter-fire-core\""),
       ]
