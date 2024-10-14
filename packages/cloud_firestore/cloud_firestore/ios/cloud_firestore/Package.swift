@@ -29,7 +29,7 @@ let package = Package(
       name: "cloud_firestore",
       dependencies: [
         .product(name: "FirebaseFirestore", package: "firebase-ios-sdk"),
-        .product(name: "firebase-core", package: "flutterfire") // Add firebase_core to target dependencies
+        .product(name: "remote-firebase-core", package: "flutterfire") // Add firebase_core to target dependencies
       ],
       resources: [
         .process("Resources"),
